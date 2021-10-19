@@ -65,3 +65,43 @@ let z = y
 
 z=58
 console.log(y)
+
+function product (a, b) {
+    return a*b
+}
+
+console.log(product(3, 5))
+
+
+
+function swap (y, i, j) { 
+       var t = y[i]
+       y[i] = y[j]
+       y[j] = t             
+}
+
+function Sort (list) {
+    for (let i = 0; i < list.length; i++) {
+        for (let j = 0; j < list.length-i-1; j++) {
+            if (list[j] > list[j+1]) {
+                swap(list, j, j+1)
+            } else {
+                
+            }
+            
+        }
+        
+    }
+}
+
+ let set = [7, 2, 8, 7, 1]
+ Sort(set)
+set.forEach(element => {
+console.log(element)
+});
+
+let mix = [2, 4, 3]
+swap(mix, 0, 2)
+mix.forEach(element => {
+    console.log(element)
+});

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <div class="left-panel"></div>
+    <div class="right-panel">
+        <div class="right-panel-content">
+            <h1>Register</h1>
+            <h2>Manage your store from one location</h2>
+            <p> We have all the tools you need to manage your store from one location. <br>Sign up to get started.</p>
+            <form action="" class="sign-up-form">
+                <div class="form-content">
+                    <div>
+                                <label for="fname" class="form-label" id="fname-id">First name</label></br>
+                            <input type="text" aria-labelledby="fname-id" id="fname" name="fname" placeholder="Enter your first name">
+                    </div>
+                    <div>
+                        <label for="lname" class="form-label">Last name</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div>
+                        <label for="number" class="form-label">Phone Number</label><br>
+                        <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone number"><br>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="terms" name="terms" placeholder="yes">
+                    <label for="terms" class="form-label">I agree to the <a href="">Terms</a> and <a
+                            href="">Conditions</a></label><br><br>
+                </div>
+                <input type="button" id="button" value="Create Account">
+            </form></br>
+            <p>Already have an acccount? <a href="">Sign In</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

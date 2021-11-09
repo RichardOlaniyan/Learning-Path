@@ -41,7 +41,7 @@ function registerValidators () {
             let newCustomer = new customer(fname.value.trim(), lname.value.trim(), number.value.trim(), email.value.trim())
         alert('Customer: ' + newCustomer.fullName() + ' has been created')
         } else {
-            //alert ('Form is not complete')
+            alert ('Form is not complete')
             window.setTimeout(() => {fname.blur()
                 lname.blur()
                 number.blur()

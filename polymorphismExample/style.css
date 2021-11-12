@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+    color: #0C60BB;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0px;
+    font-size: 2rem;
+}
+
+.buttonYes {
+    background-color:  #effff7;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-color:  #00DF74;
+    transition-duration: 0.4s;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttonYes:hover {
+    background-color:#00DF74;
+    color: white;
+}
+
+.buttonNo {
+background-color: rgb(250, 240, 242);
+border-radius: 6px;
+font-size: 16px;
+padding: 16px 32px;
+border-color: crimson;
+transition-duration: 0.4s;
+margin-left: 10px;
+cursor: pointer;
+}
+.buttonNo:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.bodyWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buttonWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 16px;
+}

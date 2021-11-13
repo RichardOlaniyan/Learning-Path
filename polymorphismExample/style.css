@@ -46,6 +46,7 @@ transition-duration: 0.4s;
 margin-left: 10px;
 cursor: pointer;
 }
+
 .buttonNo:hover {
     background-color: crimson;
     color: white;

@@ -6,7 +6,7 @@ function tempConverter() {
     let tCel = document.getElementById('celResult')
 
     convertBtn.addEventListener('click', () => { tFah.innerHTML = fahConvert(tKev.value) + "°F"
-      tCel.innerHTML = celConvert(tKev.value) + "°C"
+    tCel.innerHTML = celConvert(tKev.value) + "°C"
     })
 
 }

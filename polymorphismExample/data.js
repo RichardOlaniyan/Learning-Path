@@ -6,6 +6,8 @@ function pageContent () {
     let btnNo = document.getElementById("buttonNo")
 
     btnYes.addEventListener("click", () => questionChange(activeQuestion, "yes" ))
+    gsap.to(".bodyWrap", {duration:1, y:0})
+
 }
 
 let allQuestions = [
@@ -38,3 +40,4 @@ function questionChange(question, option, qElement = document.getElementById("qu
      
  }
 }
+

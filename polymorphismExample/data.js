@@ -37,8 +37,11 @@ function questionChange(question, option, qElement = document.getElementById("qu
      let nextQuestion = allQuestions.find(e => e.questionNumber == allQuestions.find(e => e.questionNumber == question).yesPath) 
      qElement.innerHTML = nextQuestion.question
      activeQuestion = nextQuestion.questionNumber
-     gsap.to(".bodyWrap", {duration:0, y:-500})
-     window.setTimeout(()=> gsap.to(".bodyWrap", {duration:1, y:0}, 1000))
+     window.setTimeout (()=>{
+        document.getElementsByClassName("bodyWrap")[0].style.transform = "translateY(-100%)"
+         gsap.to(".bodyWrap", {duration:1, y:0})
+        }, 1000)
+     //window.setTimeout(()=> gsap.to(".bodyWrap", {duration:1, y:0}), 2000)
  } else {
      
  }

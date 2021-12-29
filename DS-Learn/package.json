@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "playroom": "^0.27.9"
+  },
+  "scripts": {
+    "playroom:start": "playroom start",
+    "playroom:build": "playroom build"
+  }
+}
